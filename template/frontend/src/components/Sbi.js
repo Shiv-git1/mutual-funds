@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import LoadingBox from './LoadingBox';
+import image from '../images/sbi-bank-image.jpg';
 
 export default function Sbi() {
     const [posts, setPosts] = useState([]);
@@ -24,8 +25,8 @@ export default function Sbi() {
                     <Link to={`/product/${posts["scheme_code"]}`}>
 
                         <img className="medium"
-                            src="https://www.careerindia.com/img/2020/10/sbiclerkmainsexamdate2020-1603220343.jpg"
-                            alt="hdfc_image" />
+                            src={image}
+                            alt="sbi_image" />
                     </Link>
                     <div className="card-body">
                         <Link to={`/product/${posts["scheme_code"]}`}>

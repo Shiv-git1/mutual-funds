@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import LoadingBox from './LoadingBox';
+import image from '../images/canara-bank-image.jpg';
 
 export default function Canara() {
     const [posts, setPosts] = useState([]);
@@ -24,8 +25,8 @@ export default function Canara() {
                     <Link to={`/product/${posts["scheme_code"]}`}>
 
                         <img className="medium"
-                            src="https://www.whoistheownerof.com/wp-content/uploads/2018/01/Owner-of-Canara-Bank-Wiki-Logo-profile-1024x767.jpg"
-                            alt="hdfc_image" />
+                            src={image}
+                            alt="canara_image" />
                     </Link>
                     <div className="card-body">
                         <Link to={`/product/${posts["scheme_code"]}`}>

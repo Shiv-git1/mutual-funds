@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import LoadingBox from './LoadingBox';
+import image from '../images/axis-bank-image.jpg';
 
 export default function Axis() {
     const [posts, setPosts] = useState([]);
@@ -24,8 +25,8 @@ export default function Axis() {
                     <Link to={`/product/${posts["scheme_code"]}`}>
 
                         <img className="medium"
-                            src="https://resize.indiatvnews.com/en/resize/newbucket/715_-/2021/06/axis-bank-1623303816.jpg"
-                            alt="hdfc_image" />
+                            src={image}
+                            alt="axis_image" />
                     </Link>
                     <div className="card-body">
                         <Link to={`/product/${posts["scheme_code"]}`}>

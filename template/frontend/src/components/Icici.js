@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import LoadingBox from './LoadingBox';
+import image from '../images/icici-bank-image.jpg';
 
 export default function Icici() {
     const [posts, setPosts] = useState([]);
@@ -25,8 +26,8 @@ export default function Icici() {
                     <Link to={`/product/${posts["scheme_code"]}`}>
 
                         <img className="medium"
-                            src="https://www.socialsamosa.com/wp-content/uploads/2013/01/ICICI-bank-e1359031123634.jpg"
-                            alt="hdfc_image" />
+                            src={image}
+                            alt="icici_image" />
                     </Link>
                     <div className="card-body">
                         <Link to={`/product/${posts["scheme_code"]}`}>

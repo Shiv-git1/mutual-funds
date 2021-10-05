@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import LoadingBox from './LoadingBox';
+import image from '../images/hdfc-bank-image.jpg';
 
 export default function Hdfc() {
   const [posts, setPosts] = useState([]);
@@ -24,7 +25,7 @@ export default function Hdfc() {
           <Link to={`/product/${posts["scheme_code"]}`}>
 
             <img className="medium"
-              src="https://www.teahub.io/photos/full/277-2778302_hdfcbanklogo-hdfc-bank.jpg"
+              src={image}
               alt="hdfc_image" />
           </Link>
           <div className="card-body">
